@@ -1,0 +1,133 @@
+/*****************************************************************************/
+/* Home: Style */
+/*****************************************************************************/
+.home {
+}
+
+.home .side {
+    float: left;
+    width: 160px;
+    display: block;
+}
+
+.home .main {
+    left: 180px;
+    width: 870px;
+    display: block;
+    position: absolute;
+}
+
+.home h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 1.5em;
+}
+
+.home .item_grid {
+    max-width: 900px;
+}
+
+.home .item_grid .item {
+    float: left;
+    width: 427px;
+    height: 213px;
+    background: #aaa;
+    margin: 4px;
+}
+
+.home .item_grid .item_wide {
+    float: left;
+    width: 100%;
+    height: 360px;
+    background: #aaa;
+    margin: 4px;
+}
+
+.home .item_meta {
+    top: 170px;
+    left: 25px;
+    display: block;
+    width: 80%;
+    position: relative;
+    font-family: 'Istok Web', sans-serif;
+    text-shadow: 0 0 4px rgba(255, 255, 255, .75);
+}
+
+.home .item_meta .item_title {
+    display: block;
+    font-size: 20px;
+    height: 21px;
+    line-height: 21px;
+    padding-bottom: 7px;
+    padding-right: 25px;
+    vertical-align: bottom;
+}
+
+.home .item_meta .item_description {
+    display: block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    padding-right: 25px;
+    vertical-align: bottom;
+}
+
+
+.category {
+    font-family: 'Istok Web', sans-serif;
+}
+
+.category li {
+    margin: 0px;
+    padding: 0px;
+    display: list-item;
+    list-style: none outside none;
+    position: relative;
+    text-align: left;
+}
+
+.category li :last-child {
+    margin-bottom: 1em;
+}
+
+.category ul {
+    margin: 0px;
+    padding: 0px;
+    display: list-item;
+    position: relative;
+    text-align: left;
+    list-style: none outside none;
+}
+
+.category .title {
+    font-weight: bolder;
+    vertical-align: bottom;
+    color: black;
+}
+
+.flexslider {
+    position: relative;
+    padding: 0;
+    margin: 4px;
+    border: none;
+    box-shadow: none;
+    max-width: 880px;
+    height: 480px;
+}
+
+.flexslider img {
+    height: 480px;
+}
+
+.flexslider .flex-control-nav {
+    bottom: 20px;
+}
+
+.flex-direction-nav a:before {
+    font-family: 'Istok Web', sans-serif;
+    content: '<' !important;
+}
+
+.flex-direction-nav a.flex-next:before {
+    font-family: 'Istok Web', sans-serif;
+    content: '>' !important;
+}

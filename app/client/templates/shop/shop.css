@@ -1,0 +1,154 @@
+/*****************************************************************************/
+/* Home: Style */
+/*****************************************************************************/
+.content {
+}
+
+.content .side {
+    float: left;
+    width: 160px;
+    display: block;
+}
+
+.content .main {
+    left: 180px;
+    display: block;
+    position: absolute;
+}
+
+.content h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 1.5em;
+}
+
+.item_cover {
+    width: 100%;
+    max-width: 840px;
+    height: auto;
+    margin: 4px;
+}
+
+.item_grid {
+    max-width: 840px;
+}
+
+.item_grid .item {
+    float: left;
+    width: 270px;
+    height: 270px;
+    background: #aaa;
+    margin: 4px;
+}
+
+.item_grid .item_span2 {
+    float: left;
+    width: 544px;
+    height: 270px;
+    background: #aaa;
+    margin: 4px;
+}
+
+.item_grid .item_span3 {
+    float: left;
+    width: 818px;
+    height: 270px;
+    background: #aaa;
+    margin: 4px;
+}
+
+.item_grid .item_span4 {
+    float: left;
+    width: 1080px;
+    height: 270px;
+    background: #aaa;
+    margin: 4px;
+}
+
+.item_meta {
+    top: 210px;
+    left: 25px;
+    display: block;
+    width: 80%;
+    position: relative;
+    font-family: 'Istok Web', sans-serif;
+    text-shadow: 0 0 4px rgba(255, 255, 255, .75);
+}
+
+.item_meta .item_title {
+    display: block;
+    font-size: 20px;
+    height: 21px;
+    line-height: 21px;
+    padding-bottom: 7px;
+    padding-right: 25px;
+    vertical-align: bottom;
+}
+
+.item_meta .item_description {
+    display: block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    padding-right: 25px;
+    vertical-align: bottom;
+}
+
+.sidebar {
+    font-family: 'Dosis', sans-serif;
+}
+
+.sidebar li {
+    margin: 0px;
+    padding: 0px;
+    display: list-item;
+    list-style: none outside none;
+    position: relative;
+    text-align: left;
+}
+
+.sidebar li :last-child {
+    margin-bottom: 1em;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    display: list-item;
+    position: relative;
+    text-align: left;
+    list-style: none outside none;
+}
+
+.sidebar .title {
+    font-weight: bolder;
+    vertical-align: bottom;
+    color: black;
+}
+
+.content .flexslider {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    max-width: 840px;
+    height: 320px;
+}
+
+.content .flexslider img {
+    height: 320px;
+}
+
+.content .flexslider .flex-control-nav {
+    bottom: 20px;
+}
+
+.content .flex-direction-nav a:before {
+    font-family: 'Istok Web', sans-serif;
+    content: '<' !important;
+}
+
+.content .flex-direction-nav a.flex-next:before {
+    font-family: 'Istok Web', sans-serif;
+    content: '>' !important;
+}

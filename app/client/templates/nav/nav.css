@@ -1,0 +1,21 @@
+/*****************************************************************************/
+/* Nav: Style */
+/*****************************************************************************/
+.navbar-header {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.navbar-brand {
+    font-weight: bolder;
+    font-size: 2em;
+    color: black;
+}
+
+.navbar_default {
+    background-color: rgba(255, 255, 255, 125);
+    border-bottom-color: transparent;
+}
+
+.navigation {
+    font-family: 'Dosis', sans-serif;
+}

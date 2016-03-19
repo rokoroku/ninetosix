@@ -1,0 +1,50 @@
+<template name="Home">
+    <div class="home">
+        <div class="container-fluid">
+            <h1 style="margin-left: 180px">Curations</h1><br>
+        </div>
+
+        <div class="container-fluid">
+            <div class="side">
+
+            </div>
+            <div class="main">
+                <div class="slider">
+                    {{>imagesSlider items = curations.banner}}
+                </div>
+                {{#if curations.pick}}
+                    <div class="item_grid">
+                        {{#each curations.pick.items}}
+                            {{>curation}}
+                        {{/each}}
+                    </div>
+                {{/if}}
+            </div>
+
+        </div>
+    </div>
+</template>
+
+
+<template name="curation">
+    <div class="item{{#if span}}_span{{span}}{{/if}}"
+         style="background-image: url('{{image}}'); background-size: cover;">
+        <div class="item_meta">
+            <span class="item_title">{{title}}</span>
+            <span class="item_description">{{description}}</span>
+        </div>
+    </div>
+</template>
+
+
+<template name="imagesSlider">
+    <div id="slider" class="flexslider">
+        <ul class="slides">
+            {{#each items}}
+                <li>
+                    <img src="{{image}}"/>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</template>
