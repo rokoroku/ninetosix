@@ -23,7 +23,7 @@
 
 .item_cover {
     width: 100%;
-    max-width: 840px;
+    max-width: 826px;
     height: auto;
     margin: 4px;
 }
@@ -42,7 +42,7 @@
 
 .item_grid .item_span2 {
     float: left;
-    width: 544px;
+    width: 548px;
     height: 270px;
     background: #aaa;
     margin: 4px;
@@ -50,7 +50,7 @@
 
 .item_grid .item_span3 {
     float: left;
-    width: 818px;
+    width: 826px;
     height: 270px;
     background: #aaa;
     margin: 4px;

@@ -1,3 +1,35 @@
+var special = {
+    title: 'Special',
+    cover: '/image/cover_special.png',
+    cover2: '/image/cover_bdsm.png',
+    curations: [
+        {
+            title: 'Our Picks',
+            item: [
+                {
+                    title: 'BANANA',
+                    description: 'good shaped banana',
+                    image: '/image/toy_slide1.png',
+                    span: 3
+                },
+                {
+                    title: 'RABBIT',
+                    description: 'delicious rabbit',
+                    image: '/image/toy_slide3.png',
+                    span: 3
+                },
+                {
+                    title: 'RABBIT',
+                    description: 'delicious rabbit',
+                    image: '/image/toy_slide4.png',
+                    span: 3
+                }
+            ]
+        },
+    ],
+};
+
+
 var woman = {
     title: 'Women\'s',
     cover: '/image/women_cover.png',
@@ -13,9 +45,23 @@ var woman = {
                     title: 'RABBIT',
                     description: 'delicious rabbit',
                     image: '/image/women_sq2.png'
+                },
+                {
+                    title: 'MAGIC',
+                    description: 'from your fingertips',
+                    image: '/image/women_sq3.jpg'
                 }
             ]
         },
+        {
+            title: 'Event',
+            item: [
+                {
+                    image: '/image/toy_slide4.png',
+                    span: 3
+                }
+            ]
+        }
     ],
 
     categories: [
@@ -76,10 +122,23 @@ var man = {
                     title: 'COCKy',
                     description: '당신의 everytime go to ring',
                     image: '/image/men_sq3.png'
+                },
+                {
+                    title: 'BONDORA',
+                    description: '하나로 부족하시다면',
+                    image: '/image/men_sq2.jpg'
                 }
             ]
         },
-
+        {
+            title: 'Event',
+            item: [
+                {
+                    image: '/image/toy_slide1.png',
+                    span: 3
+                }
+            ]
+        }
     ],
 
     categories: [
@@ -155,8 +214,8 @@ var couple = {
         {
             item: [
                 {
-                    title: 'BOLD / THIN',
-                    description: '앞 뒤로 동시에 사용해요',
+                    title: 'REVERSABLE',
+                    description: '일석 이조의 효과',
                     image: '/image/couple_sq.png'
                 },
                 {
@@ -171,7 +230,15 @@ var couple = {
                 }
             ]
         },
-
+        {
+            title: 'Event',
+            item: [
+                {
+                    image: '/image/toy_slide3.png',
+                    span: 3
+                }
+            ]
+        }
     ],
 
     categories: [
@@ -237,6 +304,8 @@ ShopController = RouteController.extend({
                 return couple;
             case 'lifestyle':
                 return lifestyle;
+            case 'special':
+                return special;
         }
     },
 

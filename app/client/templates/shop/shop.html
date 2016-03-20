@@ -15,6 +15,11 @@
                         <img class="item_cover" src="{{cover}}"/>
                     </div>
                 {{/if}}
+                {{#if cover2}}
+                    <div class="container-fluid clearfix">
+                        <img class="item_cover" src="{{cover2}}"/>
+                    </div>
+                {{/if}}
                 {{#if slides}}
                     <div class="container-fluid clearfix">
                         {{>imagesSlider items = slides}}

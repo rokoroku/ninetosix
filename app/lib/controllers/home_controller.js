@@ -30,6 +30,9 @@ HomeController = RouteController.extend({
                         image: '/image/lifestyle-cover.png',
                     },
                     {
+                        image: '/image/cover_special.png',
+                    },
+                    {
                         image: '/image/couple_cover.png',
                     },
                     {
