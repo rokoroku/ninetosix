@@ -22,3 +22,9 @@ Router.route('/category/:_id/', {
   controller: 'CategoryController',
   where: 'client'
 });
+
+Router.route('/review/', {
+  name: 'review',
+  controller: 'ReviewController',
+  where: 'client'
+});

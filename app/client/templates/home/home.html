@@ -27,7 +27,7 @@
 
 
 <template name="curation">
-    <div class="item{{#if span}}_span{{span}}{{/if}}"
+    <div class="item{{#if span}}_span{{span}}{{/if}}" onclick="location.href='/review/#';"
          style="background-image: url('{{image}}'); background-size: cover;">
         <div class="item_meta">
             <span class="item_title">{{title}}</span>
@@ -42,7 +42,9 @@
         <ul class="slides">
             {{#each items}}
                 <li>
-                    <img src="{{image}}"/>
+                    <a href="/review/#">
+                        <img src="{{image}}"/>
+                    </a>
                 </li>
             {{/each}}
         </ul>

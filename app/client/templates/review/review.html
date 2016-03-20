@@ -1,0 +1,44 @@
+<template name="Review">
+    <div class="content">
+        <div class="container-fluid">
+            <h1 style="margin-left: 180px">{{title}}</h1><br>
+        </div>
+        <div class="container-fluid">
+
+            <div class="side">
+            </div>
+
+            <div class="main">
+                {{#if cover}}
+                    <div class="container-fluid clearfix">
+                        <img class="item_cover" src="{{cover}}"/>
+                    </div>
+                {{/if}}
+                {{#if review}}
+                    <div class="container-fluid clearfix">
+                        <p class="review">
+                            {{review}}
+                        </p>
+                    </div>
+                {{/if}}
+                {{#if slides}}
+                    <div class="container-fluid clearfix">
+                        {{>imagesSlider items = slides}}
+                    </div>
+                {{/if}}
+                {{#each curations}}
+                    <div class="container-fluid clearfix">
+                        {{#if title}}
+                            <h1>{{title}}</h1>
+                        {{/if}}
+                        <div class="item_grid">
+                            {{#each item}}
+                                {{> item}}
+                            {{/each}}
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</template>
